@@ -1,0 +1,41 @@
+@font-face{
+    font-family:Quesha;
+    src: url(Fonts/Quesha.ttf);
+}
+body {
+    background-color: whitesmoke;
+}
+div:first-of-type{
+    text-align: center;
+}
+div:nth-of-type(1) p{
+    margin-top: 0px;
+    text-align: center;
+    font-size: 25px;
+    font-family: Quesha;
+    margin-right: 400px;
+}
+div:nth-of-type(2){
+    margin-left: 750px;
+}
+#button {
+    border: none;
+    color: #746D6E;
+    font-size: 15px;
+    padding: 50px, 60px; 
+    height: 40px;
+    width: 100px;
+}
+div:first-of-type h1{
+    font-family: Quesha;
+    font-size: 80px;
+    margin-right: 350px;
+    margin-top: 150px;
+}
+#home-logo {
+    margin-top: 150px;
+    height: 250px;
+    float: left;
+    margin-left: 300px;
+    clear: both;
+}

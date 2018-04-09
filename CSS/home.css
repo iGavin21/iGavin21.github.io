@@ -1,0 +1,102 @@
+@font-face{
+    font-family: Quesha;
+    src: url("Fonts/Quesha.ttf");
+}
+@font-face{
+    font-family: ExpressoCaffe;
+    src: url("Fonts/ExpressoCaffe.ttf");
+}
+@font-face{
+    font-family: AltoySitalic;
+    src: url("Fonts/Altoysitalic personal only.ttf");
+}
+
+body{
+    width: 100%;
+    margin:0%;
+    background-color: whitesmoke;
+    /*
+    background-image: url(Backgrounds/french-style-coffee-shops.jpeg);
+    position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;*/
+}
+
+#budget{
+    display: block;
+    text-align: center;
+}
+#budget h2{
+    font-family: AltoySitalic;
+    font-size: 50px;
+    font-weight: bold;
+    color: black;
+}
+#budget-value{
+    padding: 15px;
+    font-size: 15px;
+    color:darkgray;
+    border-radius: 5px;
+}
+#sub{
+    width : 60px;
+    height: 40px;
+    border: none;
+     
+}
+
+#logo {
+    height: auto;
+    width: 110px;
+    vertical-align: middle;
+}
+
+#top{
+    background-color:#252423;
+    color: white;
+    font-family: Quesha;
+    height: auto;
+}
+#top img, #top h1{
+    display: inline-block;
+}
+#top h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#filter-background{
+    display:none;
+    position:fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+#filter{
+    background-color: #fefefe;
+    margin: 10%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+.filter-class h2{
+    font-family: Quesha;
+    font-size: 30px;
+    text-align: center;
+}
+.category {
+    text-align: center;
+    font-size: 16px;
+}
+#radio-choice {
+    font-size: 16px;
+    display: inline;
+    text-align: center;
+}
+
+

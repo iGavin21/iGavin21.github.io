@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home: CashFe</title>
+        <link rel="stylesheet" type="text/css" href="CSS/home.css">
+    </head>
+    <body>
+
+        <div id="top">
+            <a href = "index.html">            <img id = "logo" src="CSS/Logos/cashe-logo.png" alt="CashFe Logo" > </a>
+            <h1>CashFe</h1>
+        </div>
+        <div>
+            <div id="budget">
+                <h2>Your Budget: </h2>
+                <form id="budgetForm" onsubmit="validateForm()">
+                    <input id="budget-value" type="text" placeholder="Enter your budget..." name="budget" required autofocus>
+                    <button type="button" onclick="getBudget()">click</button>
+                </form>
+            </div>
+            <div id="filter-background">
+                <div id="filter">
+                    <div class="filter-class">
+                        <h2>Commodity Category</h2>
+                        <form class ="category">
+                            <input type="checkbox" id="cakes" onclick="getCategory(this.id)">Cakes
+                            <input type="checkbox" id="cookies" onclick="getCategory(this.id)">Cookies
+                            <input type="checkbox"  id="coffee" onclick="getCategory(this.id)">Coffee
+                            <input type="checkbox"  id="frappe" onclick="getCategory(this.id)">Frappe
+                            <input type="checkbox"  id="juice" onclick="getCategory(this.id)">Juice
+                            <input type="checkbox" id="milk" onclick="getCategory(this.id)">Milk Tea
+                            <input type="checkbox"  id="pasta" onclick="getCategory(this.id)">Pasta
+                            <input type="checkbox"  id="rice" onclick="getCategory(this.id)">Rice Meal
+                        </form>
+                    </div>
+                    <div class="filter-class">
+                        <h2>Wi-Fi Availability</h2>
+                        <form id = "radio-choice" >
+                           <div>
+                            <input type="radio" name="availability" id="yes" value="yes" onclick="getAvailability(this.id)">Yes                 
+                            </div>
+                            <div>
+                            <input type="radio" name="availability" id="no" value="no" onclick="getAvailability(this.id)">No
+                            </div>
+                        </form>
+                    </div>
+                    <div class="filter-class">
+                        <h2>Cafe Ambiance</h2>
+                        <div class = "category">
+                        <input type="checkbox" id="cozy" onclick="getAmbience(this.id)">Cozy
+                        <input type="checkbox" id="quiet" onclick="getAmbience(this.id)">Quiet
+                        <input type="checkbox" id="casual" onclick="getAmbience(this.id)">Casual
+                        </div>
+                    </div> 
+                    <button type="button" onclick="compile()">next</button>
+                </div>
+                <ul id="showCafe">
+                </ul>
+
+            </div>
+        <script src="scripts/indexedDB.js" async></script>
+        </div>
+    </body>
+</html>
